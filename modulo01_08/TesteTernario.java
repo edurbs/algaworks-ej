@@ -1,3 +1,5 @@
+package modulo01_08;
+
 public class TesteTernario {
 
 	public static void main (String[] args){

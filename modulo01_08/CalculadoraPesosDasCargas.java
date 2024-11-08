@@ -1,3 +1,5 @@
+package modulo01_08;
+
 public class CalculadoraPesosDasCargas {
 
   public static void main(String[] args) {

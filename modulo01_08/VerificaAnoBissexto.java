@@ -1,3 +1,5 @@
+package modulo01_08;
+
 import java.util.Scanner;
 
 public class VerificaAnoBissexto {
@@ -12,7 +14,7 @@ public class VerificaAnoBissexto {
 		boolean bissexto = ano % 400 == 0 
 			|| ( ano % 4 == 0 && ano % 100 != 0);
 				
-		System.out.printf("O ano %s é bissexto? %b", ano, bissexto);
+		System.out.printf("O ano %s ï¿½ bissexto? %b", ano, bissexto);
 	
 	}
 

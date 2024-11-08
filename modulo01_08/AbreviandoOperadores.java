@@ -1,3 +1,5 @@
+package modulo01_08;
+
 public class AbreviandoOperadores {
 	public static void main (String[] args){
 		int idadeA = 10;

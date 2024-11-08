@@ -1,3 +1,5 @@
+package modulo01_08;
+
 import java.util.Scanner;
 
 public class CalculaFolha {

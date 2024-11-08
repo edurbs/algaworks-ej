@@ -1,3 +1,5 @@
+package modulo01_08;
+
 import java.util.Scanner;
 
 public class SimuladorEmprestimo {
@@ -5,7 +7,7 @@ public class SimuladorEmprestimo {
   public static void main(String[] args) {
     Scanner entrada = new Scanner(System.in);
 
-    System.out.print("Valor do empréstimo: ");
+    System.out.print("Valor do emprï¿½stimo: ");
     double valorEmprestimo = entrada.nextDouble();
 
     System.out.print("Quantidade de parcelas: ");

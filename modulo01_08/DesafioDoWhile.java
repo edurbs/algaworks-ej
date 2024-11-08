@@ -1,3 +1,5 @@
+package modulo01_08;
+
 import java.util.Scanner;
 public class DesafioDoWhile{
 	public static void main (String[] args){

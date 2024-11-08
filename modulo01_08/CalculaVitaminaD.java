@@ -1,4 +1,4 @@
-// vitamina D
+package modulo01_08;// vitamina D
 // recomendado > 20
 // para grupo de risco 30 a 80
 
@@ -17,7 +17,7 @@ public class CalculaVitaminaD {
 		
 		boolean normal = (!grupoRisco && nivel > 20) || (grupoRisco && nivel > 30 && nivel < 80);
 		
-		System.out.printf("Nível normal? %b%n", normal);
+		System.out.printf("Nï¿½vel normal? %b%n", normal);
 	
 	}
 

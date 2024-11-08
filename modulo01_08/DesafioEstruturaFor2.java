@@ -1,10 +1,12 @@
+package modulo01_08;
+
 import java.util.Scanner;
 public class DesafioEstruturaFor2 {
 	public static void main (String[] args){
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Digite um número inteiro positivo: ");
+		System.out.print("Digite um nï¿½mero inteiro positivo: ");
 		int numero = sc.nextInt();
 		
 		boolean primo = true;
@@ -20,9 +22,9 @@ public class DesafioEstruturaFor2 {
 		}		
 		
 		if(primo){
-			System.out.printf("O número %d é primo", numero);
+			System.out.printf("O nï¿½mero %d ï¿½ primo", numero);
 		}else{
-			System.out.printf("O número %d não é primo", numero);
+			System.out.printf("O nï¿½mero %d nï¿½o ï¿½ primo", numero);
 		}
 	}
 }
