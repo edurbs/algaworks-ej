@@ -4,6 +4,8 @@ import banco.exception.DepositoException;
 import banco.exception.SaqueException;
 import banco.exception.TransferenciaException;
 
+import java.util.Objects;
+
 public class ContaCorrente {
 
     private String numero;
@@ -38,9 +40,9 @@ public class ContaCorrente {
         this.ativa = false;
     }
 
-    public boolean sacar(double valor) {
+    public void sacar(double valor) {
         if (valor <= 0) {
-            throw new SaqueException("Valor de saque deve ser maior que 0");
+            throw new IllegalArgumentException("Valor de saque deve ser maior que 0");
         }
 
         if (valor > this.saldo) {
@@ -52,12 +54,11 @@ public class ContaCorrente {
         }
 
         this.saldo -= valor;
-        return true;
     }
 
-    public boolean depositar(double valor) {
+    public void depositar(double valor) {
         if (valor <= 0) {
-            throw new DepositoException("Valor de depósito deve ser maior que 0");
+            throw new IllegalArgumentException("Valor de depósito deve ser maior que 0");
         }
 
         if (isInativa()) {
@@ -65,20 +66,16 @@ public class ContaCorrente {
         }
 
         this.saldo += valor;
-        return true;
     }
 
-    public boolean transferir(ContaCorrente contaDestino, double valor) {
+    public void transferir(ContaCorrente contaDestino, double valor) {
+        //Objects.requireNonNull(contaDestino);
         if (contaDestino.isInativa()) {
             throw new TransferenciaException("Conta de destino está inativa");
         }
 
-        if (sacar(valor)) {
-            contaDestino.depositar(valor);
-            return true;
-        }
-
-        return false;
+        sacar(valor);
+        contaDestino.depositar(valor);
     }
 
 }
