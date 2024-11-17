@@ -13,6 +13,6 @@ public class Principal {
         servicoPropostaSeguro.emitir(carro);
         servicoPropostaSeguro.emitir(caminhao);
         servicoPropostaSeguro.emitir(imovel);
-
     }
+
 }

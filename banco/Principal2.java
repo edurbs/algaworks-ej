@@ -13,6 +13,7 @@ public class Principal2 {
         conta1.ativar();
         conta1.depositar(1_000);
 
+
         conta1.transferir(conta2, 500);
         conta1.transferir(conta1, 500);
 
