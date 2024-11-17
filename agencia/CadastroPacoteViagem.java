@@ -29,13 +29,14 @@ public class CadastroPacoteViagem {
     }
 
     public void removerPorDescricao(String descricao) {
-        int sizeBefore = pacotes.size();
+        boolean nothingRemoved = true;
         for (PacoteViagem pacote : pacotes) {
             if (descricao.equals(pacote.getDescricao())) {
                 remover(pacote);
+                nothingRemoved=false;
             }
         }
-        if (pacotes.size() == sizeBefore) {
+        if (nothingRemoved) {
             throw new PacoteViagemException("Não foi encontrado nenhum pacote com este nome para remover");
         }
     }
