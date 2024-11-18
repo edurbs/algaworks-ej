@@ -33,7 +33,8 @@ public class CadastroPacoteViagem {
         for (PacoteViagem pacote : pacotes) {
             if (descricao.equals(pacote.getDescricao())) {
                 remover(pacote);
-                nothingRemoved=false;
+                nothingRemoved = false;
+
             }
         }
         if (nothingRemoved) {

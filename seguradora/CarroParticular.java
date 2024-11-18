@@ -1,6 +1,8 @@
 package seguradora;
 
-public class CarroParticular extends VeiculoAutomotor {
+public class
+
+CarroParticular extends VeiculoAutomotor {
 
     public CarroParticular(String modelo, double valorMercado, int anoFabricado) {
         super(modelo, valorMercado, anoFabricado);

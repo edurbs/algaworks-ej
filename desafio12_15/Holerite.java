@@ -1,4 +1,4 @@
-package desafio1215;
+package desafio12_15;
 
 public record Holerite (String nome, String mesAno, double Salario) {
     public void imprimir(){
